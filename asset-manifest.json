@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/sliderR/static/css/main.4d493252.chunk.css",
+    "main.js": "/sliderR/static/js/main.0c9b33df.chunk.js",
+    "main.js.map": "/sliderR/static/js/main.0c9b33df.chunk.js.map",
+    "runtime-main.js": "/sliderR/static/js/runtime-main.9f4cabfe.js",
+    "runtime-main.js.map": "/sliderR/static/js/runtime-main.9f4cabfe.js.map",
+    "static/css/2.679831fc.chunk.css": "/sliderR/static/css/2.679831fc.chunk.css",
+    "static/js/2.284e1add.chunk.js": "/sliderR/static/js/2.284e1add.chunk.js",
+    "static/js/2.284e1add.chunk.js.map": "/sliderR/static/js/2.284e1add.chunk.js.map",
+    "static/js/3.d662f11b.chunk.js": "/sliderR/static/js/3.d662f11b.chunk.js",
+    "static/js/3.d662f11b.chunk.js.map": "/sliderR/static/js/3.d662f11b.chunk.js.map",
+    "index.html": "/sliderR/index.html",
+    "static/css/2.679831fc.chunk.css.map": "/sliderR/static/css/2.679831fc.chunk.css.map",
+    "static/css/main.4d493252.chunk.css.map": "/sliderR/static/css/main.4d493252.chunk.css.map",
+    "static/js/2.284e1add.chunk.js.LICENSE.txt": "/sliderR/static/js/2.284e1add.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/sliderR/static/media/youtube.4cb2a4c8.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9f4cabfe.js",
+    "static/css/2.679831fc.chunk.css",
+    "static/js/2.284e1add.chunk.js",
+    "static/css/main.4d493252.chunk.css",
+    "static/js/main.0c9b33df.chunk.js"
+  ]
+}
