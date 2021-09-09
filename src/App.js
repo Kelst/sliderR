@@ -10,27 +10,31 @@ import {
 } from "react-router-dom";
 import About from './components/About';
 import Contact from './components/Contact';
+import {useDispatch, useSelector} from 'react-redux'
+  import {fetchImage,changeSwitch} from './redux/actions'
 function App() {
- const [toggle, setToggle] = useState(true)
- const switchToggle=()=>{
-  document.body.classList.toggle("dark")
-   setToggle(!toggle);
- }
-  const [SliderData,setList]=useState([]);
-  useEffect(() => {
- fetch('http://localhost:3006/Photos')
-.then(response => response.json())
-.then(json => setList([...json]))
+ 
+ const dispatch = useDispatch()
+
+//   const [SliderData,setList]=useState([]);
+//   useEffect(() => {
+//  fetch('http://localhost:3006/Photos')
+// .then(response => response.json())
+// .then(json => setList([...json]))
+    
+// }, [])
+useEffect(() => {
+  dispatch(fetchImage())
     
 }, [])
   return (
     <div className="conatiner">
     <Router>
-     <Header toggle={toggle} switchToggle={switchToggle}/>
+     <Header />
      
      <Switch>
      <Route exact path="/">
-                 <Slider slider={SliderData}/>
+                 <Slider />
           </Route>
           <Route path="/about">
                  <About/>

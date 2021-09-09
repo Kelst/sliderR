@@ -1,9 +1,11 @@
 import React,{useState} from 'react'
 import GridImage from './GridImage';
+import { useSelector} from 'react-redux'
 
 export default function Slider({slider}) {
+    const list = useSelector(state => state.galleryaArrays.imageLists)
     const [current,setCurrent]=useState(0);
-    const length=slider.length;
+    const length=list.length;
     const nextSlide=()=>{
         setCurrent(current===length-1?0:current+1);
     }
@@ -21,7 +23,7 @@ export default function Slider({slider}) {
                
           <div class="slide">
           {
-                slider.map((item,index)=>{
+                list.map((item,index)=>{
                   return  (<div className={index===current?"slide active":"slide"} key={index}> 
                              {index===current && <img src={item.url} alt="im" className="image"/>}
                    </div>)
@@ -34,7 +36,7 @@ export default function Slider({slider}) {
         </div>
        
       
-<GridImage slider={slider} currentImage={current} setNewCurrent={setNewCurrent} nextSlide={nextSlide} prevSlide={prevSlide}/>
+<GridImage slider={list} currentImage={current} setNewCurrent={setNewCurrent} nextSlide={nextSlide} prevSlide={prevSlide}/>
 
         </section>
     )
