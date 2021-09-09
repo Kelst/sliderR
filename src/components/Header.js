@@ -1,9 +1,17 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import {
     Link
   } from "react-router-dom";
-  
-export default function Header({toggle,switchToggle}) {
+  import {fetchImage,changeSwitch} from '../redux/actions'
+  import { useDispatch, useSelector} from 'react-redux'
+export default function Header() {
+    const dispatch = useDispatch()
+    const switchToggle=()=>{
+     document.body.classList.toggle("dark")
+      dispatch(changeSwitch())
+    }
+    const toggle = useSelector(state => state.galleryaArrays.toggle)
+    
     return (
         <header>
             <div className="wrapper">

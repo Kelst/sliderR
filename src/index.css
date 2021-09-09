@@ -70,27 +70,8 @@ body{
     
   }
   
-  .right-arrow {
-    position: absolute;
-    top: 50%;
-    right: 32px;
-    font-size: 3rem;
-    color: #000;
-    z-index: 10;
-    cursor: pointer;
-    user-select: none;
-  }
   
-  .left-arrow {
-    position: absolute;
-    top: 50%;
-    left: 32px;
-    font-size: 3rem;
-    color: #000;
-    z-index: 10;
-    cursor: pointer;
-    user-select: none;
-  }
+
   
   .slide {
     display: flex;
@@ -98,7 +79,6 @@ body{
     align-items: center;
     opacity: 1;
     transition-duration: 1s ease;
-    
     
   }
   .grid-container {
@@ -125,6 +105,7 @@ body{
   .image-min{
       width:150px;
       height: 90px;
+      object-fit: cover;
       
   }
   
@@ -139,6 +120,7 @@ body{
   border: 2px solid #324b4e;
   background: #c2bcbc;
   outline: none;
+  margin-left: -30px;
   position: relative;
   transition: .3s linear;
 }
@@ -450,3 +432,45 @@ background-image: url("./image/youtube.svg");
       flex-direction: column;
 
     }
+    @media only screen
+    and (min-width: 1700px) {
+      .image {
+        width: 800px;
+        height: 500px;
+      
+        
+      }
+      .grid-container {
+        grid-template-columns:repeat(5,180px);
+        grid-template-rows: 120px 120px;
+      }
+      .image-min{
+        width:180px;
+        height: 120px;
+        object-fit: cover;
+        
+    }
+    }
+    @media only screen
+and (max-width: 872px) {
+  .image {
+    width: 500px;
+    height: 300px;
+  
+    
+  }
+  .grid-container {
+       
+    grid-template-columns:repeat(4,130px);
+    grid-template-rows: 70px 70px;
+  }
+  .image-min{
+    width:130px;
+    height:70px;
+    object-fit: cover;
+    
+}
+.d7 input{
+  margin-left: 70px;
+}
+}

@@ -37,7 +37,7 @@ export default function GridImage({slider,setNewCurrent,currentImage,prevSlide,n
              {listImage.map((element,index)=>{
              return (
                  
-             <div className="grid-items" onClick={setNewCurrent} key={index}><div><img className="image-min grid-items" style={{border:currentImage===index?"4px solid black":""}} src={element.url} id={index} alt="im" /> </div>
+             <div className="grid-items" onClick={setNewCurrent} key={index}><div><img className="image-min grid-items" style={{border:currentImage===index?"1px solid black":""}} src={element.url} id={index} alt="im" /> </div>
                </div>)
             })}
                  </div> 
